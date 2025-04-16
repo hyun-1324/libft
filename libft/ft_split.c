@@ -6,7 +6,7 @@
 /*   By: donheo <donheo@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 11:33:55 by donheo            #+#    #+#             */
-/*   Updated: 2025/03/25 15:51:00 by donheo           ###   ########.fr       */
+/*   Updated: 2025/04/16 12:29:32 by donheo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ static char	*word_up(const char *start, size_t len)
 {
 	char	*word;
 
-	word = (char *)malloc((len + 1) * sizeof(char));
+	word = malloc((len + 1) * sizeof(char));
 	if (!word)
 		return (NULL);
 	ft_strlcpy(word, start, len + 1);
@@ -53,7 +53,7 @@ static void	free_all(char **split, int i)
 
 static int	copy_words(char const *s, char c, char **split)
 {
-	int			i;
+	size_t		i;
 	const char	*start;
 
 	i = 0;
@@ -85,7 +85,7 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	split = (char **)malloc((count_words(s, c) + 1) * sizeof(char *));
+	split = malloc((count_words(s, c) + 1) * sizeof(char *));
 	if (!split)
 		return (NULL);
 	if (!copy_words(s, c, split))
