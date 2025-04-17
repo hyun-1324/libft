@@ -6,7 +6,7 @@
 #    By: donheo <donheo@student.hive.fi>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/17 13:49:53 by donheo            #+#    #+#              #
-#    Updated: 2025/04/17 17:00:45 by donheo           ###   ########.fr        #
+#    Updated: 2025/04/17 17:11:43 by donheo           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,13 +39,13 @@ RM = rm -f
 
 all: $(NAME)
 
-%.o: %.c libft.h
+%.o: %.c libft.h libft_bonus.h
 		$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJS)
 		$(AR) $(NAME) $(OBJS)
 
-bonus: $(OBJS) $(BONUS_OBJS)
+bonus: $(BONUS_OBJS)
 	$(AR) $(NAME) $(BONUS_OBJS)
 
 clean:
