@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: donheo <donheo@student.hive.fi>            +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/04/17 13:49:53 by donheo            #+#    #+#              #
-#    Updated: 2025/04/17 17:11:43 by donheo           ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 CFLAGS = -Wall -Wextra -Werror
 CC = cc
 NAME = libft.a
@@ -39,13 +27,16 @@ RM = rm -f
 
 all: $(NAME)
 
-%.o: %.c libft.h libft_bonus.h
+$(NAME): $(OBJS)
+		$(AR) $(NAME) $^
+
+%_bonus.o: %_bonus.c libft_bonus.h
+	$(CC) $(CFLAGS) -c $< -o $@
+
+%.o: %.c libft.h
 		$(CC) $(CFLAGS) -c $< -o $@
 
-$(NAME): $(OBJS)
-		$(AR) $(NAME) $(OBJS)
-
-bonus: $(BONUS_OBJS)
+bonus: all $(BONUS_OBJS)
 	$(AR) $(NAME) $(BONUS_OBJS)
 
 clean:
@@ -55,3 +46,5 @@ fclean: clean
 		$(RM) $(NAME)
 
 re: fclean all
+
+.PHONY : all clean fclean re bonus
