@@ -6,11 +6,11 @@
 /*   By: donheo <donheo@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 16:43:40 by donheo            #+#    #+#             */
-/*   Updated: 2025/04/17 09:18:06 by donheo           ###   ########.fr       */
+/*   Updated: 2025/04/17 16:55:21 by donheo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libft_bonus.h"
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
