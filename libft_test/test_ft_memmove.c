@@ -25,7 +25,7 @@ void	test_ft_memmove_overlap_forward(void)
 
 	ft_memmove(buffer1 + 3, buffer1 + 1, 5);
 	memmove(buffer2 + 3, buffer2 + 1, 5);
-	printf("%s orginal %s\n", buffer1, buffer2);
+	printf("ft: %s orginal: %s\n", buffer1, buffer2);
 	if (memcmp(buffer1, buffer2, 9) == 0)
 		result = "PASS";
 	else
