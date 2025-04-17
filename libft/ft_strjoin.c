@@ -6,7 +6,7 @@
 /*   By: donheo <donheo@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/21 18:14:48 by donheo            #+#    #+#             */
-/*   Updated: 2025/04/15 12:11:09 by donheo           ###   ########.fr       */
+/*   Updated: 2025/04/17 10:13:59 by donheo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	len1 = ft_strlen(s1);
 	len2 = ft_strlen(s2);
-	new_s = (char *)malloc((len1 + len2 + 1) * sizeof(char));
+	new_s = malloc((len1 + len2 + 1) * sizeof(char));
 	if (!new_s)
 		return (NULL);
 	i = 0;

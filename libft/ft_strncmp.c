@@ -6,7 +6,7 @@
 /*   By: donheo <donheo@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/20 11:19:42 by donheo            #+#    #+#             */
-/*   Updated: 2025/03/23 18:35:33 by donheo           ###   ########.fr       */
+/*   Updated: 2025/04/17 09:58:59 by donheo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	while (i < n)
 	{
 		if (s1[i] != s2[i] || s1[i] == '\0' || s2[i] == '\0')
-			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+			return (s1[i] - s2[i]);
 		i++;
 	}
 	return (0);

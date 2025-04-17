@@ -6,7 +6,7 @@
 /*   By: donheo <donheo@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/19 16:00:59 by donheo            #+#    #+#             */
-/*   Updated: 2025/04/16 12:35:47 by donheo           ###   ########.fr       */
+/*   Updated: 2025/04/17 10:21:10 by donheo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@ char	*ft_strchr(const char *s, int c)
 	while (*s)
 	{
 		if (*s == (char)c)
-			return (s);
+			return ((char *)s);
 		s++;
 	}
 	if (c == '\0')
-		return (s);
+		return ((char *)s);
 	return (NULL);
 }

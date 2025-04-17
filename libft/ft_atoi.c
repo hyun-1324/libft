@@ -5,13 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: donheo <donheo@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/21 13:44:03 by donheo            #+#    #+#             */
-/*   Updated: 2025/04/15 15:32:37 by donheo           ###   ########.fr       */
+/*   Created: 2025/04/17 09:12:30 by donheo            #+#    #+#             */
+/*   Updated: 2025/04/17 09:16:15 by donheo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include <limits.h>
-# include "libft.h"
+#include <limits.h>
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {
