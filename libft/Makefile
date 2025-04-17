@@ -6,7 +6,7 @@
 #    By: donheo <donheo@student.hive.fi>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/17 13:49:53 by donheo            #+#    #+#              #
-#    Updated: 2025/04/17 16:57:56 by donheo           ###   ########.fr        #
+#    Updated: 2025/04/17 17:00:45 by donheo           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 		$(AR) $(NAME) $(OBJS)
 
-bonus: $(OBJS) $(BONUS_OBJS) libft_bonus.h
+bonus: $(OBJS) $(BONUS_OBJS)
 	$(AR) $(NAME) $(BONUS_OBJS)
 
 clean:
