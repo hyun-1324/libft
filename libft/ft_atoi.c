@@ -6,11 +6,10 @@
 /*   By: donheo <donheo@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 09:12:30 by donheo            #+#    #+#             */
-/*   Updated: 2025/04/17 09:16:15 by donheo           ###   ########.fr       */
+/*   Updated: 2025/04/18 21:05:11 by donheo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <limits.h>
 #include "libft.h"
 
 int	ft_atoi(const char *str)

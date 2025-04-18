@@ -6,7 +6,7 @@
 /*   By: donheo <donheo@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 11:17:49 by donheo            #+#    #+#             */
-/*   Updated: 2025/04/18 16:56:53 by donheo           ###   ########.fr       */
+/*   Updated: 2025/04/18 21:08:37 by donheo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 # define LIBFT_H
 
 # include <stdlib.h>
+# include <limits.h>
+# include <stdint.h>
+# include <unistd.h>
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
