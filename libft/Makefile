@@ -27,14 +27,11 @@ RM = rm -f
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
+$(NAME) : $(OBJS)
 		$(AR) $(NAME) $^
 
-%_bonus.o: %_bonus.c libft_bonus.h
+%.o : %.c libft.h libft_bonus.h
 	$(CC) $(CFLAGS) -c $< -o $@
-
-%.o: %.c libft.h
-		$(CC) $(CFLAGS) -c $< -o $@
 
 bonus: all $(BONUS_OBJS)
 	$(AR) $(NAME) $(BONUS_OBJS)
