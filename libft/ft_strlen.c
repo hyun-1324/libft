@@ -6,13 +6,15 @@
 /*   By: donheo <donheo@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/19 15:56:21 by donheo            #+#    #+#             */
-/*   Updated: 2025/04/17 09:29:22 by donheo           ###   ########.fr       */
+/*   Updated: 2025/04/18 16:57:18 by donheo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(const char *str)
+#include "libft.h"
+
+size_t	ft_strlen(const char *str)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (str[i])

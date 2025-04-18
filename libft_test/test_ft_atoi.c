@@ -1,4 +1,4 @@
-# include "../libft/libft.h"
+# include "libft.h"
 # include <limits.h>
 
 void	test_ft_atoi(const char *str)
@@ -18,6 +18,7 @@ void	test_ft_atoi(const char *str)
 
 int	main(void)
 {
+	test_ft_atoi("992147483648  ");
 	test_ft_atoi("-2147483648  ");
 	test_ft_atoi("!@2147483647+");
 	test_ft_atoi("  42");

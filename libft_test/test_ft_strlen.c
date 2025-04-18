@@ -16,5 +16,6 @@ int	main(void)
 	test_strlen("");
 	test_strlen("     ");
 	test_strlen("42Hive\n\t");
+	printf("strlen output: %lu\n",strlen(NULL));
 	return(0);
 }

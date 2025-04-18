@@ -35,5 +35,6 @@ int main(void)
 	test_ft_strlcat("", "", 5);
 	test_ft_strlcat("Hello", "World!", 0);
 	test_ft_strlcat("HelloHelloHello", "World!", 10);
+	test_ft_strlcat("abcd", "efgh", 3);
 	return (0);
 }

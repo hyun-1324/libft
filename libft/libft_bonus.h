@@ -6,7 +6,7 @@
 /*   By: donheo <donheo@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 16:54:01 by donheo            #+#    #+#             */
-/*   Updated: 2025/04/18 10:31:45 by donheo           ###   ########.fr       */
+/*   Updated: 2025/04/18 15:20:40 by donheo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define LIBFT_BONUS_H
 
 # include <stdlib.h>
-# include <stdio.h>
 
 typedef struct s_list
 {
