@@ -6,7 +6,7 @@
 /*   By: donheo <donheo@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/21 15:52:41 by donheo            #+#    #+#             */
-/*   Updated: 2025/04/18 21:57:31 by donheo           ###   ########.fr       */
+/*   Updated: 2025/04/19 09:15:54 by donheo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strdup(const char *s)
 {
-	int		len;
-	int		i;
+	size_t	len;
+	size_t	i;
 	char	*str;
 
 	len = 0;
