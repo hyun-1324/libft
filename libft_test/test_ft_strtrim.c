@@ -41,7 +41,7 @@ int	main(void)
 	test_ft_strtrim("...Hello...", ".");
 	test_ft_strtrim("---Test---", "-");
 	test_ft_strtrim("xxx42xxx", "x");
-	test_ft_strtrim("42Seoul", "1234567890");
+	test_ft_strtrim("42hive", "1234567890");
 	test_ft_strtrim("abcabc", "abc");
 	test_ft_strtrim("abc", "");
 	test_ft_strtrim("", "abc");

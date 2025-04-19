@@ -1,5 +1,6 @@
-#include "libft.h"
+#include "../libft/libft.h"
 #include <string.h>
+#include <stdio.h>
 
 void	print_split_result(char **split)
 {
@@ -44,8 +45,8 @@ int	main(void)
 {
 	test_ft_split("Hello World This Is 42", ' ');
 	test_ft_split("  split  this please  ", ' ');
-	test_ft_split("42-Seoul-Is-Awesome", '-');
-	test_ft_split(",,,,42,,,Seoul,,", ',');
+	test_ft_split("Hive-Is-Awesome", '-');
+	test_ft_split(",,,,42,,,Hive,,", ',');
 	test_ft_split("nosplit", ',');
 	test_ft_split("", ',');
 	test_ft_split(NULL, ' ');

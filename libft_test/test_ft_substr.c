@@ -45,7 +45,7 @@ int	main(void)
 	test_ft_substr("Hello", 3, 10);
 	test_ft_substr("", 0, 5);
 	// test_ft_substr(NULL, 0, 5);
-	test_ft_substr("42Seoul", 0, 0);
+	test_ft_substr("42hive", 0, 0);
 	test_ft_substr("abcdef", 2, 3);
 	test_ft_substr("abcdef", 2, 20);
 	return (0);

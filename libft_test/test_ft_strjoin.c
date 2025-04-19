@@ -39,7 +39,7 @@ void	test_ft_strjoin(const char *s1, const char *s2)
 int	main(void)
 {
 	test_ft_strjoin("Hello", "World");
-	test_ft_strjoin("42", "Seoul");
+	test_ft_strjoin("42", "Hive");
 	test_ft_strjoin("", "World");
 	test_ft_strjoin("Hello", "");
 	test_ft_strjoin("", "");

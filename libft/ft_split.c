@@ -6,16 +6,16 @@
 /*   By: donheo <donheo@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 11:33:55 by donheo            #+#    #+#             */
-/*   Updated: 2025/04/17 09:29:04 by donheo           ###   ########.fr       */
+/*   Updated: 2025/04/19 10:19:28 by donheo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	count_words(char const *s, char c)
+static size_t	count_words(char const *s, char c)
 {
-	int	count;
-	int	in_word;
+	size_t	count;
+	int		in_word;
 
 	count = 0;
 	in_word = 0;
@@ -44,7 +44,7 @@ static char	*word_up(const char *start, size_t len)
 	return (word);
 }
 
-static void	free_all(char **split, int i)
+static void	free_all(char **split, size_t i)
 {
 	while (i--)
 		free(split[i]);
