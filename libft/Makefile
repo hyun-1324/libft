@@ -30,7 +30,7 @@ all: $(NAME)
 $(NAME) : $(OBJS)
 		$(AR) $(NAME) $^
 
-%.o : %.c libft.h libft_bonus.h
+%.o : %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
 bonus: all $(BONUS_OBJS)
