@@ -23,6 +23,8 @@ OBJS = $(SRCS:.c=.o)
 AR = ar rcs
 RM = rm -f
 
+.SECONDARY: $(OBJS)
+
 all: $(NAME)
 
 $(NAME): $(OBJS)
