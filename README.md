@@ -40,10 +40,12 @@ typedef struct s_list
 
 ## How to Compile
 
+```bash
 make # builds libft.a
 make clean # removes object files
 make fclean # removes object files and libft.a
 make re # rebuilds everything
+```
 
 ## License
 
