@@ -26,7 +26,7 @@ More utility functions for string manipulation and I/O:
 - Function application: `ft_strmapi`, `ft_striteri`
 - File descriptor output: `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`
 
-### Bonus: Linked List Functions
+### Linked List Functions
 
 Custom singly linked list implementation using the `t_list` struct:
 
