@@ -6,7 +6,7 @@
 /*   By: donheo <donheo@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 09:12:30 by donheo            #+#    #+#             */
-/*   Updated: 2025/04/18 21:05:11 by donheo           ###   ########.fr       */
+/*   Updated: 2025/07/12 17:11:34 by donheo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ int	ft_atoi(const char *str)
 		return (INT_MIN);
 	sign = 1;
 	num = 0;
-	while (*str == ' ' || *str == '\t' || *str == '\n' || \
-		*str == '\v' || *str == '\f' || *str == '\r')
+	while (*str == ' ' || *str == '\t' || *str == '\n' \
+|| *str == '\v' || *str == '\f' || *str == '\r')
 		str++;
 	if (*str == '+' || *str == '-')
 	{
